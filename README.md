@@ -61,6 +61,15 @@ Set your encryption key for Laravel
 vendor/bin/sail artisan key:generate
 ```
 
+### Database
+
+There are a couple of tables (in addition to Laravel's defaults) that need to be added.
+
+```
+vendor/bin/sail artisan migrate
+```
+
+
 All set! You should be able to run Shorties locally by visiting [http://localhost](http://localhost)
 
 
