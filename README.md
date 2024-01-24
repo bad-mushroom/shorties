@@ -93,13 +93,19 @@ There's a facade for accessing the service, also called `Shorty`.
 
 I wanted to keep the looking up of the short code and redirect simple for performance and not introduce its own controller. I created a single route that takes a "short code" parameter:
 
-http://localhost/<short-code>
+http://localhost/{short-code}
+
+#### Configuration
+
+There are some configuration options in `config/shorties.php` that can be overridden via .env variables. These values could easily have been added as class properties but consolidating them here gives us a place to expand customization for future features.
 
 #### Misc
 
 For a quick "it looks fine" experience, I went with Bootstrap 5 and kept the out-of-the box styles.
 
 The `/analytics` endpoint can also be accessed as an API request by passing an `Accept: application/json` header.
+
+In the project root there's an `example.csv` with some valid and invalid URLs to test with.
 
 ## Conclusion
 
@@ -110,4 +116,6 @@ Overall this was a fun project to work on and I appreciate the reviewer's time!
 * Add authentication to allow user-owned short URLs (since right now they are all "public") :fire:
 * Give short codes their own domain instead of everything shared on localhost. shor.ty :thinking:
 * Doing a final review, I realized I did not paginate the analytics data. :sad:
+* Through out the code I commented where improvements and "nice to haves" could be added
+* Would be nice to have seeded some sample data to work with
 
