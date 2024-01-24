@@ -107,7 +107,11 @@ There are some configuration options in `config/shorties.php` that can be overri
 
 For a quick "it looks fine" experience, I went with Bootstrap 5 and kept the out-of-the box styles.
 
-The `/analytics` endpoint can also be accessed as an API request by passing an `Accept: application/json` header.
+The `/analytics` endpoint can also be accessed as an API request by passing an `Accept: application/json` header:
+
+```
+curl --location 'http://localhost/analytics' --header 'Accept: application/json'
+```
 
 In the project root there's an `example.csv` with some valid and invalid URLs to test with.
 
