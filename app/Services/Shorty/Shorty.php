@@ -77,10 +77,4 @@ class Shorty
             ->where('short_code', $shortCode)
             ->exists();
     }
-
-    public function all(): array
-    {
-        return Url::all()->toArray();
-    }
-
 }
