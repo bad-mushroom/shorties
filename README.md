@@ -6,6 +6,10 @@ This is an example app for a URL shortener called "Shorties".
 * php 8.3
 * Docker / Sail
 * Composer
+  
+<img width="320" alt="screenshot_main" src="https://github.com/bad-mushroom/shorties/assets/381203/2baf598d-b250-4a6f-b12c-da172b4c5f4b">
+<img width="320" alt="screenshot_analytics" src="https://github.com/bad-mushroom/shorties/assets/381203/841564fd-074f-488e-aa23-258cd517ac90">
+
 
 ## Getting Started
 
